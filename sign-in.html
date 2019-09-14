@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<!--z-index: - 1
+Lá no .squares li-->
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Form Animation</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+</head>
+
+<body>
+  <section class="form-section">
+    <h1>Login</h1>
+
+    <div class="form-wrapper">
+      <form action="">
+        <div class="input-block">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" />
+        </div>
+        <div class="input-block">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" />
+        </div>
+        <div class="remember">
+          <label for="remember">
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn-login" onclick="btn-sig">Login</button>
+        <div class="p-block">
+          <p>Lost your <a href="remember-password.html" style="color:dodgerblue">password</a>?</p>
+          <p>Don't have an <a href="sign-up.html" style="color:dodgerblue">account</a>?</p>
+        </div>
+        <span>Adapted of Rocketseat</span>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
