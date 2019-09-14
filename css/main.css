@@ -33,15 +33,25 @@ form {
   background-color: white;
   padding: 30px 25px;
   border-radius: 5px;
+
+  display: block;
+  font-size: 14px;
+  color: darkslateblue;
+  outline-color: #7159c1;
+
+  overflow: hidden;
+
 }
+
+a:link, a:visited {
+	text-decoration: none
+	}
+a:active {
+	text-decoration: none
+	}
 
 form .input-block {
   margin-bottom: 20px;
-}
-
-form .input-block label {
-  font-size: 14px;
-  color: darkslateblue;
 }
 
 form .input-block input {
@@ -56,27 +66,49 @@ form .input-block input {
   outline-color: #7159c1;
 }
 
+form .remember {
+  margin-bottom: 12px;
+}
+
 form .btn-login {
   display: block;
-  min-width: 120px;
+  min-width: 180px;
   border: none;
   background-color: #7159c1;
   color: white;
   border-radius: 25px;
   margin: auto;
-  padding: 7px;
+  padding: 8px;
 }
 
-span {
+form .p-block {
+  margin-top: 30px;
+}
+
+form .p-block p {
+  padding: 3px;
+}
+
+form > span {
   float: right;
   font-size: 11.5px;
+  margin-top: 50px;
 }
+
+form .dialog {
+  width: 240px;
+  text-align: justify;
+  margin-bottom: 40px;
+  color: #626d79;
+
+  animation: move 500ms;
+}
+
 /* Animation Section */
 
 /* Form Appearance */
 
 form {
-  overflow: hidden;
   animation: appearance 0.4s;
 }
 
@@ -99,13 +131,43 @@ form .input-block:nth-child(1) {
 
 form .input-block:nth-child(2) {
   animation: move 500ms;
-  animation-delay: 150ms;
+  animation-delay: 200ms;
+  animation-fill-mode: backwards;
+}
+
+form .input-block:nth-child(3) {
+  animation: move 500ms;
+  animation-delay: 250ms;
+  animation-fill-mode: backwards;
+}
+
+form .input-block:nth-child(4) {
+  animation: move 500ms;
+  animation-delay: 300ms;
+  animation-fill-mode: backwards;
+}
+
+form .remember {
+  animation: move 500ms;
+  animation-delay: 350ms;
   animation-fill-mode: backwards;
 }
 
 form .btn-login {
   animation: move 500ms;
-  animation-delay: 200ms;
+  animation-delay: 300ms;
+  animation-fill-mode: backwards;
+}
+
+form .p-block {
+  animation: move 500ms;
+  animation-delay: 350ms;
+  animation-fill-mode: backwards;
+}
+
+form > span {
+  animation: move 500ms;
+  animation-delay: 400ms;
   animation-fill-mode: backwards;
 }
 
