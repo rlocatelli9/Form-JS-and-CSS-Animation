@@ -60,17 +60,17 @@ form .input-block input {
   margin-top: 8px;
   padding: 7px;
   font-size: 16px;
-  color: red;
+  color: midnightblue;
   border-radius: 2px;
   border: 1px solid #ccddef;
-  outline-color: rgb(255, 0, 0);
+  outline-color: rgb(56, 53, 53);
 }
 
 form .remember {
   margin-bottom: 12px;
 }
 
-form .btn-login {
+form .btn-login, .btn-recovery, .btn-create{
   display: block;
   min-width: 180px;
   border: none;
@@ -153,7 +153,7 @@ form .remember {
   animation-fill-mode: backwards;
 }
 
-form .btn-login {
+form .btn-login, .btn-recovery, .btn-create {
   animation: move 500ms;
   animation-delay: 300ms;
   animation-fill-mode: backwards;
@@ -182,3 +182,17 @@ form > span {
   }
 }
 
+/* take out form moving to down */
+
+.form-move{
+  animation: move_down 400ms forwards;
+}
+
+@keyframes move_down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
