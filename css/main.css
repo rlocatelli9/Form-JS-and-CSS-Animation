@@ -185,7 +185,8 @@ form > span {
 /* take out form moving to down */
 
 .form-move{
-  animation: move_down 400ms forwards;
+  animation: move_down 1.0s forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 @keyframes move_down {
@@ -194,5 +195,24 @@ form > span {
   }
   to {
     transform: translateY(100vh);
+  }
+}
+
+/* moving form between axis X and Y fast*/
+
+.form-nono {
+  animation: negative 350ms, appearance paused;
+  animation-iteration-count: 2;
+}
+
+@keyframes negative {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  35% {
+    transform: translateX(-10%);    
+  }
+  65% {
+    transform: translateX(15%);
   }
 }
