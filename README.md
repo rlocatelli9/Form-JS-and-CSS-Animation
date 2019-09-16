@@ -1,7 +1,7 @@
 # Form with JS and CSS Animation #
 
 
-![Formulário de Login](/home/locatelli/Pictures/Screenshots/login.png)
+![Formulário de Login](../img/login.png)
 
 
 ## Challenges ##
