@@ -20,11 +20,13 @@
  - animation-direction;
  - animation-play-state;
 
-`@keyframes animation {
+```
+@keyframes animation {
    from {
       
+   }
    to { 
      
    }
 }
-`
+```
