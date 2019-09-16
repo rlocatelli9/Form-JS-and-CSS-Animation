@@ -1,8 +1,6 @@
 # Form with JS and CSS Animation #
 
-
-![Formulário de Login](../img/login.png)
-
+Screenshots can be accessed [here](/img)
 
 ## Challenges ##
 
