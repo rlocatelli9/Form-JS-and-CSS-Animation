@@ -12,6 +12,7 @@ body {
 body {
   background: linear-gradient(35deg, #4f1fec, #1fe0ee);
   font-family: Roboto, Arial, sans-serif;
+  overflow: hidden;
 }
 
 section {
@@ -40,7 +41,6 @@ form {
   outline-color: gray;
 
   overflow: hidden;
-
 }
 
 a:link, a:visited {
@@ -201,7 +201,7 @@ form > span {
 /* moving form between axis X and Y fast*/
 
 .form-nono {
-  animation: negative 350ms, appearance paused;
+  animation: negative 200ms, appearance paused;
   animation-iteration-count: 2;
 }
 
@@ -213,6 +213,30 @@ form > span {
     transform: translateX(-10%);    
   }
   65% {
-    transform: translateX(15%);
+    transform: translateX(10%);
+  }
+}
+
+.squares li {
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: block;
+  position: absolute;
+  animation: squares_move 1s infinite alternate;
+}
+
+@keyframes squares_move{
+  from{
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50%{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    transform: translateY(-700px) rotate(960deg);
   }
 }
