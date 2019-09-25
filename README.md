@@ -1,6 +1,7 @@
 # Form with JS and CSS Animation #
 
-Screenshots can be accessed [here](/img)
+![Login](img/login.png)
+The other Screenshots can be accessed [here](/img)
 
 ## Challenges ##
 
